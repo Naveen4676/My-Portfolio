@@ -312,9 +312,10 @@ p {
 }
 
 .read-more {
-  display: inline-block;
+  display: flex; /* Use flex to center */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   width: 160px; /* Fixed width for consistency */
-  text-align: center;
   padding: 12px 20px; /* Larger button size */
   background: #007bff;
   color: white;
@@ -323,12 +324,21 @@ p {
   font-weight: bold;
   font-size: 16px;
   transition: background 0.3s, transform 0.2s;
-  margin-top: auto; /* Pushes button to bottom */
+  margin: 10px auto 0; /* Centers the button */
 }
 
 .read-more:hover {
   background: #0056b3;
   transform: scale(1.07);
+}
+
+/* Ensure the service card is aligned properly */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+  justify-content: space-between;
+  text-align: center;
 }
 
 /* Responsive Design */
@@ -346,6 +356,7 @@ p {
     padding: 10px 16px;
   }
 }
+
 /* Project Section */
 /* Section Titles */
 .section-title {
