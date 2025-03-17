@@ -1,0 +1,683 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b1120;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+header {
+  background: #111827;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: flex-end; /* Align navbar to the right */
+  align-items: center;
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+  color: white;
+  margin-right: auto; /* Push the logo to the left */
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-links li a i {
+  font-size: 18px;
+  color: #007bff; /* Blue icons */
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.icon {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s;
+}
+
+.icon:hover {
+  color: #007bff;
+  transform: scale(1.2);
+}
+
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+  min-height: 90vh;
+  font-family: 'Poppins', sans-serif; /* Modern and professional font */
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+p {
+  font-size: 16px;
+  color: #c0c0c0;
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Resume Section */
+.resume-section {
+  text-align: center;
+  background: #0b1120;
+  padding: 40px 20px;
+}
+
+.resume-btn {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.resume-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Hero Image */
+.hero-image img {
+  width: 300px;
+  border-radius: 20px;
+  border: 4px solid #007bff;
+}
+
+/* Styles for About Me Section */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+  background-color: #0b1120;
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+}
+
+.about-image img {
+  width: 300px;
+  border-radius: 20px;
+  border: 4px solid #007bff;
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 40px; /* Slightly larger for emphasis */
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif; /* Elegant font for headings */
+}
+
+h3 {
+  font-size: 26px; /* Slightly larger */
+  color: #c0c0c0;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: 18px; /* Increased for better readability */
+  color: #c0c0c0;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif; /* Readable font for descriptions */
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 80px 100px;
+  background-color: #0b1120;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+  font-size: 40px; /* Bigger title */
+  font-weight: bold;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.service-card {
+  background-color: #1a1f2d;
+  padding: 35px;
+  border-radius: 12px;
+  text-align: center;
+  width: 320px; /* Slightly bigger */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+.service-icon {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.service-title {
+  font-size: 24px; /* Bigger font */
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.service-description {
+  font-size: 18px; /* Bigger and more readable */
+  color: #c0c0c0;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.service-card {
+  background-color: #1a1f2d;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 320px; /* Slightly wider for better layout */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures even spacing */
+  height: 100%; 
+}
+
+.service-description {
+  flex-grow: 1; /* Fills available space */
+  font-size: 16px;
+  color: #c0c0c0;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.read-more {
+  display: inline-block;
+  width: 160px; /* Fixed width for consistency */
+  text-align: center;
+  padding: 12px 20px; /* Larger button size */
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: auto; /* Pushes button to bottom */
+}
+
+.read-more:hover {
+  background: #0056b3;
+  transform: scale(1.07);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .read-more {
+    width: 140px; /* Slightly smaller button for small screens */
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+/* Project Section */
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 40px; /* Bigger size */
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', sans-serif;
+  color: white; /* Ensure it's white */
+}
+
+.section-title span {
+  color: #007bff; /* Blue color for highlight */
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* More spacing */
+  flex-wrap: wrap;
+  margin-top: 30px;
+  font-family: 'Poppins', sans-serif; /* Clean, modern font */
+}
+
+.project-card {
+  background: #1a1f2d;
+  padding: 25px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-card h3 {
+  margin: 15px 0;
+  font-size: 22px; /* Slightly larger */
+  transition: color 0.3s ease;
+  font-family: 'Montserrat', sans-serif; /* Stylish font */
+}
+
+.project-card p {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #c0c0c0;
+  transition: opacity 0.3s ease;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  min-height: 60px; /* Ensures even text height */
+}
+
+
+/* Hover Effects */
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.3);
+}
+
+.project-card:hover img {
+  transform: scale(1.07);
+}
+
+.project-card:hover h3 {
+  color: #007bff;
+}
+
+.project-card:hover p {
+  opacity: 1;
+}
+
+/* View Button */
+.view-btn {
+  display: inline-block;
+  margin-top: auto;
+  padding: 12px 18px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  align-self: center;
+}
+
+.view-btn:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Certificates Section */
+.certificates-section {
+  text-align: center;
+  background: #0b1120;
+  padding: 80px 20px;
+}
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 Columns */
+  gap: 25px;
+  justify-content: center;
+  padding: 20px;
+}
+.certificate-card {
+  background: #1a1f2d;
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.certificate-card img {
+  width: 100%;
+  height: 300px; /* Fixed height for uniformity */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 6px 20px rgba(0, 123, 255, 0.4);
+}
+@media (max-width: 1024px) {
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .certificates-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 per row for mobile */
+  }
+}
+/* Contact Section */
+/* Contact Section - Fully Responsive */
+.contact-section {
+  padding-top: 60px; /* Ensures spacing */
+  scroll-margin-top: 60px; /* Prevents navbar overlap */
+  text-align: center; /* Centers content */
+  max-width: 100%;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: white; /* Ensures the heading is white */
+  font-size: 38px; /* Slightly bigger for visibility */
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-section h2 span {
+  color: #007bff; /* Keeps "Me" highlighted */
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+/* Responsive Contact Form */
+.contact-form {
+  background-color: #1a1f2d;
+  padding: 35px;
+  border-radius: 12px;
+  width: 50%;
+  max-width: 600px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.contact-form:hover {
+  transform: scale(1.03);
+}
+
+/* Input Box */
+.input-box {
+  display: flex;
+  align-items: center;
+  background: #222836;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: background 0.3s ease;
+}
+
+.input-box:hover {
+  background: #2b3242;
+}
+
+.input-box i {
+  color: #007bff;
+  margin-right: 12px;
+  font-size: 22px;
+}
+
+.input-box input,
+.input-box textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 17px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif; /* Clean and readable font */
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.input-group input, 
+textarea {
+  flex: 1;
+  padding: 14px;
+  background-color: #222836;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+  font-size: 16px;
+  margin-top: 12px;
+  transition: border 0.3s ease;
+}
+
+.input-group input:focus, 
+textarea:focus {
+  border-color: #007bff;
+}
+
+textarea {
+  width: 96%;
+  height: 140px;
+  resize: none;
+  border: #007bff solid 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Centered Submit Button with Proper Spacing */
+.contact-form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px; /* Adds spacing from inputs */
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Proper spacing between button and icon */
+.contact-form button i {
+  margin-right: 10px; /* Adds space between icon and text */
+  font-size: 20px;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .contact-form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-section h2 {
+    font-size: 32px;
+  }
+
+  .contact-form button {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-form {
+    width: 95%;
+    padding: 25px;
+  }
+
+  input, textarea {
+    font-size: 1rem;
+    padding: 14px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 14px;
+  }
+}
+html{
+    scroll-behavior: smooth;
+}
