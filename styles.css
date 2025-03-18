@@ -6,48 +6,52 @@ body {
   margin: 0;
   padding: 0;
 }
-/* Header Styling */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #111827;
-    padding: 15px 40px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-/* Navbar Styling */
-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #111827;
+  padding: 15px 40px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  border-bottom: 1px solid #1a1f2d;
-  padding: 15px 20px;
 }
 
-/* Mobile Navigation */
-#navbar {
-  display: none; /* Initially hidden */
-  flex-direction: column;
-  position: absolute;
-  top: 60px;
-  right: 0;
-  background: #1a1f2d;
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-#navbar.active {
+/* NAV LINKS */
+.nav-links {
   display: flex;
+  list-style: none;
+  gap: 15px;
+  margin-right: 50px;
 }
 
-#menu-toggle {
+.nav-links li {
+  white-space: nowrap;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.nav-links li a i {
+  font-size: 18px;
+  color: #007bff;
+  margin-right: 5px;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+/* HAMBURGER MENU BUTTON */
+.menu-toggle {
   display: none;
   background: none;
   border: none;
@@ -56,17 +60,32 @@ nav {
   cursor: pointer;
 }
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
-  #menu-toggle {
-    display: block;
+  .menu-toggle {
+    display: block; /* Show the hamburger menu */
   }
 
-  #navbar {
+  .nav-links {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #1a1f2d;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 10px 10px;
   }
 }
-
 
 .icons {
   display: flex;
