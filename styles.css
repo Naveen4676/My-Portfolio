@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 /* HEADER */
 header {
   display: flex;
@@ -41,31 +42,27 @@ header {
   transition: 0.3s;
 }
 
-.nav-links li a i {
-  font-size: 18px;
-  color: #007bff;
-  margin-right: 5px;
-}
-
 .nav-links li a:hover {
   color: #007bff;
 }
 
-/* HAMBURGER MENU BUTTON */
+/* MENU BUTTON */
 .menu-toggle {
   display: none;
   background: none;
   border: none;
-  font-size: 30px;
+  font-size: 18px;
   color: white;
   cursor: pointer;
-  z-index: 1100;
+  padding: 10px 15px;
+  background-color: #007bff;
+  border-radius: 5px;
 }
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block; /* Show hamburger icon */
+    display: block; /* Show text-based "MENU" button */
   }
 
   .nav-links {
@@ -78,7 +75,6 @@ header {
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    z-index: 1000;
   }
 
   .nav-links.active {
@@ -89,7 +85,6 @@ header {
     padding: 10px 10px;
   }
 }
-
 
 .icons {
   display: flex;
