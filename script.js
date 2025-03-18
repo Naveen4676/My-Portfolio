@@ -65,21 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
         navLinks.classList.toggle("active");
     });
 
-    // Close menu when clicking a link (for mobile users)
-    document.querySelectorAll(".nav-links a").forEach(link => {
-        link.addEventListener("click", function () {
-            navLinks.classList.remove("active");
-        });
-    });
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
-
-    menuToggle.addEventListener("click", function () {
-        navLinks.classList.toggle("active");
-    });
-
     // Close menu when clicking a link
     document.querySelectorAll(".nav-links a").forEach(link => {
         link.addEventListener("click", function () {
@@ -87,6 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
 
 
 
