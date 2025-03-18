@@ -6,53 +6,85 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* Navigation Bar */
 header {
-  background: #111827;
-  padding: 15px 50px;
   display: flex;
-  justify-content: flex-end; /* Align navbar to the right */
+  justify-content: space-between;
   align-items: center;
-}
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-  font-family: 'Poppins', sans-serif; /* Modern and clean font */
-  color: white;
-  margin-right: auto; /* Push the logo to the left */
+  background: #111827;
+  padding: 15px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
-
+/* NAV LINKS */
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 20px;
-  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+  list-style: none;
+  gap: 15px;
+  margin-right: 50px;
 }
 
 .nav-links li {
-  display: flex;
-  align-items: center;
+  white-space: nowrap;
 }
 
 .nav-links li a {
   text-decoration: none;
   color: white;
   font-size: 16px;
-  transition: 0.3s;
+  padding: 10px 12px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  transition: 0.3s;
 }
 
 .nav-links li a i {
   font-size: 18px;
-  color: #007bff; /* Blue icons */
+  color: #007bff;
+  margin-right: 5px;
 }
 
 .nav-links li a:hover {
   color: #007bff;
+}
+
+/* HAMBURGER MENU BUTTON */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show the hamburger menu */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #1a1f2d;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 10px 10px;
+  }
 }
 
 .icons {
@@ -89,7 +121,8 @@ header {
 }
 
 h1 {
-  font-size: 36px;
+  
+  font-size: 46px;
   font-weight: bold;
 }
 
