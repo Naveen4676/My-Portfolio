@@ -6,85 +6,90 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* HEADER */
+/* Header Styling */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #111827;
-  padding: 15px 40px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111827;
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-/* NAV LINKS */
+/* Navbar Links */
 .nav-links {
-  display: flex;
-  list-style: none;
-  gap: 15px;
-  margin-right: 50px;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin-right: 50px;
 }
 
 .nav-links li {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 .nav-links li a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  padding: 10px 12px;
-  display: flex;
-  align-items: center;
-  transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.nav-links li a i {
+    font-size: 18px;
+    color: #007bff;
+    margin-right: 5px;
 }
 
 .nav-links li a:hover {
-  color: #007bff;
+    color: #007bff;
 }
 
-/* MENU BUTTON */
+/* Menu Button (Hamburger) */
 .menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 18px;
-  color: white;
-  cursor: pointer;
-  padding: 10px 15px;
-  background-color: #007bff;
-  border-radius: 5px;
-}
-
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block; /* Show text-based "MENU" button */
-  }
-
-  .nav-links {
     display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: #1a1f2d;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .nav-links.active {
-    display: flex; /* Show the menu when active */
-  }
-
-  .nav-links li {
-    padding: 10px 10px;
-  }
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    margin-left: auto; /* Pushes to the right */
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show hamburger button */
+    }
+
+    .nav-links {
+        display: none; /* Initially hidden */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #1a1f2d;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show when active */
+    }
+
+    .nav-links li {
+        padding: 10px 10px;
+    }
+}
+
+
 
 .icons {
   display: flex;
