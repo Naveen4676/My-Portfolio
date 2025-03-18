@@ -56,16 +56,16 @@ header {
   display: none;
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 30px;
   color: white;
   cursor: pointer;
-  z-index: 1100; /* Ensure it stays above everything */
+  z-index: 1100;
 }
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block; /* Show the hamburger menu */
+    display: block; /* Show hamburger icon */
   }
 
   .nav-links {
@@ -78,7 +78,7 @@ header {
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    z-index: 1000; /* Ensure it's above other elements */
+    z-index: 1000;
   }
 
   .nav-links.active {
