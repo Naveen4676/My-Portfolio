@@ -58,22 +58,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menu-toggle");
-    const navbar = document.getElementById("navbar");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
     menuToggle.addEventListener("click", function () {
-        navbar.classList.toggle("active");
+        navLinks.classList.toggle("active");
     });
 
-    // Close menu when clicking a link (for mobile users)
-    document.querySelectorAll("#navbar a").forEach(link => {
+    // Close menu when clicking a link
+    document.querySelectorAll(".nav-links a").forEach(link => {
         link.addEventListener("click", function () {
-            navbar.classList.remove("active");
+            navLinks.classList.remove("active");
         });
     });
 });
-
-
-
 
 
